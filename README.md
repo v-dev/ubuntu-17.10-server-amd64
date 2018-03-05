@@ -1,7 +1,7 @@
 # About
 Quick way to create an Ubuntu 17.10 x64 Server with latest Docker CE.
 
-> Note: Although the name has 'desktop' in it, it does not actually have the desktop/GUI installed.
+> Note: Although the name has 'desktop' in it, it does not actually have the desktop/GUI pre-installed.
 
 # Notes
 The `ubuntu1710-desktop-0.1.0` Vagrant box was created from a modified:
