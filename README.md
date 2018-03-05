@@ -1,5 +1,5 @@
 # About
-Quick way to create a (relatively) beefed up (8gb, 4 CPUs) Ubuntu 17.10 x64 Server with latest Docker CE.
+Quick Vagrant + VirtualBox way to create a (relatively) beefed up (8gb, 4 CPUs) Ubuntu 17.10 x64 Server with latest Docker CE.
 
 # Notes
 If you're pulling this repo down to a Windows box, make sure to unset `autocrlf` first:
