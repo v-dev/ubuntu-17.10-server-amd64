@@ -21,5 +21,5 @@ Some things you may want to do on your own...
     
     sudo apt install xubuntu-desktop --no-install-recommends
 
-> Note: If you install a GUI and would like to use it, in the `Vagrantfile`, make sure to set `vb.gui` to `true`.
+> Note: If you install a GUI and would like to use it, then make sure to set `vb.gui` to `true` in the `Vagrantfile`.
 
