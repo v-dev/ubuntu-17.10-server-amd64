@@ -18,8 +18,16 @@ Vagrant.configure("2") do |config|
     vb.cpus = "4"
   end
 
-  config.vm.provision "shell" do |s|
-      s.path = "provision/install_docker.sh"
+  config.vm.provision "file", source: "provision/bash_aliases", destination: ".bash_aliases"
+  config.vm.provision "file", source: "provision/dockerip", destination: "/tmp/dockerip"
+
+  config.vm.provision "shell" do |dockerinstall|
+      dockerinstall.path = "provision/install_docker.sh"
+  end
+
+  config.vm.provision "shell" do |dockerip|
+      dockerip.inline = "mv /tmp/dockerip /usr/local/bin; sudo chmod +x /usr/local/bin/dockerip"
+      dockerip.privileged = true
   end
 
 end
